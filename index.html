@@ -18,8 +18,9 @@
                     <img class="header__logo" src="images/logo.jpg" alt="logo">
                 </a>
                 <div class="head-block__buttons-wrapper">
-                    <button href="#" class="header__link button-link button-link_header link">Вызов замерщика</button>
-                    <button href="#" class="header__link button-link button-link_header">Рассчитать стоимость</button>
+                    <button href="#" class="header__link button-link button-link_header">Вызов замерщика</button>
+                    <button href="#" class="header__link button-link button-link_header calculate-btn">Рассчитать
+                        стоимость</button>
                 </div>
                 <a href="tel:+380505057020" class="header__link header__link_number">
                     <svg class="header__svg" width="25" height="25" viewbox="0 0 25 25" fill="none"
@@ -37,7 +38,8 @@
                 </a>
                 <div class="head-block__buttons-wrapper head-block__buttons-wrapper_mobile">
                     <button href="#" class="header__link button-link button-link_header">Вызов замерщика</button>
-                    <button href="#" class="header__link button-link button-link_header">Рассчитать стоимость</button>
+                    <button href="#" class="header__link button-link button-link_header calculate-btn">Рассчитать
+                        стоимость</button>
                 </div>
             </div>
         </header>
@@ -80,30 +82,46 @@
     <div class="calculate">
         <div class="calculate__info">
             <span class="calculate__close"></span>
-            <div class="calculate__content">
+            <form class="calculate__content">
                 <h2 class="calculate__title">Рассчитать стоимость</h2>
                 <div class="calculate__wrapper">
-                    <input class="modal__input" type="text" name="type">
+                    <select class="modal__input" type="text" name="type">
+                        <option value="volvo">Выберите вид конструкции*</option>
+                        <option value="saab">Saab</option>
+                        <option value="fiat">Fiat</option>
+                        <option value="audi">Audi</option>
+                    </select>
                     <div class="calculate__wh-wrapper">
-                        <input class="modal__input" type="text" name="width">
-                        <input class="modal__input" type="text" name="height">
+                        <input placeholder="Ширина (мм)*" class="modal__input" type="text" name="width">
+                        <input placeholder="Высота (мм)*" class="modal__input" type="text" name="height">
                     </div>
-                    <input class="modal__input" type="text" name="profile">
-                    <input class="modal__input" type="text" name="window">
+                    <select class="modal__input" type="text" name="profile">
+                        <option value="volvo">Профиль*</option>
+                        <option value="saab">Saab</option>
+                        <option value="fiat">Fiat</option>
+                        <option value="audi">Audi</option>
+                    </select>
+                    <select class="modal__input" type="text" name="window">
+                        <option value="volvo">Стеклопакет*</option>
+                        <option value="saab">Saab</option>
+                        <option value="fiat">Fiat</option>
+                        <option value="audi">Audi</option>
+                    </select>
                 </div>
-                <textarea class="calculate__additional-inf" name="additional-inf" cols="30" rows="10"></textarea>
+                <textarea placeholder="Дополнительные пожелания" class="calculate__additional-inf" name="additional-inf"
+                    cols="30" rows="10"></textarea>
                 <div class="calculate__wrapper">
                     <div class="calculate__contacts">
-                        <input class="modal__input" type="text" name="name">
-                        <input class="modal__input" type="text" name="tel">
-                        <input class="modal__input" type="text" name="email">
+                        <input placeholder="Ваше имя*" class="modal__input" type="text" name="name">
+                        <input placeholder="Ваш телефон*" class="modal__input" type="tel" name="tel">
+                        <input placeholder="Ваш e-mail" class="modal__input" type="email" name="email">
                     </div>
                     <div class="calculate__contacts">
                         <div class="g-recaptcha" data-sitekey="6LeKaREUAAAAALB6Sgjp5XqHq0Kb_aLEn_KORz6u"></div>
-                        <button type="submit" class="calculate__button">рассчитать</button>
+                        <button class="calculate__button" type="submit">рассчитать</button>
                     </div>
                 </div>
-            </div>
+            </form>
         </div>
     </div>
 
@@ -122,7 +140,7 @@
                 </div>
                 <span class="slider-block__item-title">Wintech 753</span>
                 <span class="slider-block__item-subtitle">Экономвариант, ничего лишнего, от</span>
-                <button class="slider-block__item-button" href="#">заявка на просчёт</button>
+                <button class="slider-block__item-button calculate-btn" href="#">заявка на просчёт</button>
             </div>
             <div class="slider-item">
                 <div class="slider-block__image-wrapper">
@@ -130,7 +148,7 @@
                 </div>
                 <span class="slider-block__item-title">REHAU GENEO</span>
                 <span class="slider-block__item-subtitle">Экономвариант, ничего лишнего, от</span>
-                <button class="slider-block__item-button" href="#">заявка на просчёт</button>
+                <button class="slider-block__item-button calculate-btn" href="#">заявка на просчёт</button>
             </div>
             <div class="slider-item">
                 <div class="slider-block__image-wrapper">
@@ -138,7 +156,7 @@
                 </div>
                 <span class="slider-block__item-title">WDS 5S</span>
                 <span class="slider-block__item-subtitle">Экономвариант, ничего лишнего, от</span>
-                <button class="slider-block__item-button" href="#">заявка на просчёт</button>
+                <button class="slider-block__item-button calculate-btn" href="#">заявка на просчёт</button>
             </div>
             <div class="slider-item">
                 <div class="slider-block__image-wrapper">
@@ -146,7 +164,7 @@
                 </div>
                 <span class="slider-block__item-title">Aluplast 2000</span>
                 <span class="slider-block__item-subtitle">Экономвариант, ничего лишнего, от</span>
-                <button class="slider-block__item-button" href="#">заявка на просчёт</button>
+                <button class="slider-block__item-button calculate-btn" href="#">заявка на просчёт</button>
             </div>
             <div class="slider-item">
                 <div class="slider-block__image-wrapper">
@@ -154,7 +172,7 @@
                 </div>
                 <span class="slider-block__item-title">KÖMMERLING 88</span>
                 <span class="slider-block__item-subtitle">Экономвариант, ничего лишнего, от</span>
-                <button class="slider-block__item-button" href="#">заявка на просчёт</button>
+                <button class="slider-block__item-button calculate-btn" href="#">заявка на просчёт</button>
             </div>
             <div class="slider-item">
                 <div class="slider-block__image-wrapper">
@@ -162,7 +180,7 @@
                 </div>
                 <span class="slider-block__item-title">OSNOVA PREMIUM</span>
                 <span class="slider-block__item-subtitle">Экономвариант, ничего лишнего, от</span>
-                <button class="slider-block__item-button" href="#">заявка на просчёт</button>
+                <button class="slider-block__item-button calculate-btn" href="#">заявка на просчёт</button>
             </div>
             <div class="slider-item">
                 <div class="slider-block__image-wrapper">
@@ -170,7 +188,7 @@
                 </div>
                 <span class="slider-block__item-title">WDS 6S</span>
                 <span class="slider-block__item-subtitle">Экономвариант, ничего лишнего, от</span>
-                <button class="slider-block__item-button" href="#">заявка на просчёт</button>
+                <button class="slider-block__item-button calculate-btn" href="#">заявка на просчёт</button>
             </div>
         </div>
     </section>
@@ -220,7 +238,7 @@
         <div class="container container_support-block">
             <h2 class="support-block__title support-block__title_price">Точный расчёт окна
                 по вашим парамерам</h2>
-            <button class="button-link button-link_support-block">Рассчитать стоимость окна</button>
+            <button class="button-link button-link_support-block calculate-btn">Рассчитать стоимость окна</button>
         </div>
     </section>
     <section class="cards">
@@ -374,7 +392,7 @@
         <div class="container container_support-block">
             <h2 class="support-block__title support-block__title_price">Точный расчёт окна
                 по вашим парамерам</h2>
-            <button class="button-link button-link_support-block">Рассчитать стоимость окна</button>
+            <button class="button-link button-link_support-block calculate-btn">Рассчитать стоимость окна</button>
         </div>
     </section>
     <section class="examples">

@@ -23,7 +23,7 @@ const CALCULATE_BLOCK_SELECTOR = '.calculate';
 const CALCULATE_BLOCK_VISIBILITY_CLASS = 'calculate-visible';
 const CALCULATE_OVERFLOW_OFF_CLASS = 'overflow-off';
 const CALCULATE_BUTTON_SELECTOR = '.calculate__button';
-const CALCULATE_LINK_SELECTOR = '.link';
+const CALCULATE_LINK_SELECTOR = '.calculate-btn';
 const CALCULATE_INFO_SELECTOR = '.calculate__info';
 
 
